@@ -1,0 +1,24 @@
+宠安星 PETSAFE STAR — Cloudflare Pages 直接上传版
+
+【马上使用】
+1. Cloudflare 控制台 → Workers 和 Pages → 新建 Pages 项目 → 上传静态资源（Direct Upload）。
+2. 上传本 ZIP 压缩包（若控制台不接受 ZIP，先解压后上传其中所有文件，注意 index.html 必须位于发布目录根层级）。
+3. 等待部署完成，打开 Cloudflare 给出的 *.pages.dev 域名。
+4. 用户功能：预约、宠物档案、订单、照护日记、异常记录等可直接交互。
+5. 管理员后台：点击左侧「管理后台」，演示口令 2026XBAOS。
+
+【重要限制】
+这是无服务器的交互演示网站，数据使用访问者当前浏览器 localStorage 保存。
+不同用户和不同设备之间的数据不会同步；清理浏览器存储后可能丢失。
+管理员演示口令写在前端代码里，不具备安全防护效果。
+真实客户订单、收款、员工权限、云端视频、D1数据库等需要后续接入服务器 API。
+不要以此版本直接处理真实个人资料、真实付费订单。
+
+【目录】
+index.html   网站入口（部署根目录必需）
+style.css    样式和响应式布局
+app.js       交互业务逻辑
+_headers     Cloudflare Pages 响应头规则
+使用说明.txt  本说明
+
+页脚：© 2026 XBAOS · 宠安星 PETSAFE STAR · 版权所有
